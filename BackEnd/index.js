@@ -44,7 +44,7 @@ if(process.env.NODE_ENV === "production"){
     })
 }
 
-app.listen(10000, () => {
+app.listen(8080, () => {
     console.log("Server is running on port 8080");
     connectMongoDb();
 });
