@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon BackEnd/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": " NODE_DEV=development nodemon BackEnd/index.js",
+    "start":"NODE_DEV=development nodemon BackEnd/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npm install && npm install --prefix FrontEnd && npm run build --prefix FrontEnd"
   },
   "keywords": [],
   "author": "",
